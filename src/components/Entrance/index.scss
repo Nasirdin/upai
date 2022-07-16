@@ -1,0 +1,84 @@
+.entrance {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &__img {
+    margin-bottom: 54px;
+  }
+  &__text {
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .socials {
+    max-width: 171px;
+    margin: 0 auto 44px;
+    &__btn {
+      outline: none;
+      background: no-clip;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      border: 1px solid #225196;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+  }
+  &__label {
+    width: 300px;
+    height: 45px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 15px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      top: 11px;
+      left: 24px;
+      background: url(../../assets/images/lock-icon.svg);
+    }
+  }
+  &__label.entrance__label_phone {
+    &::before {
+      background: url(../../assets/images/phone-icon.svg);
+    }
+  }
+  &__input {
+    display: inline-block;
+    background: #ffffff;
+    border: 1px solid #225196;
+    border-radius: 10px;
+    padding: 13px 0 13px 54px;
+    font-size: 16px;
+    width: 244px;
+    margin-bottom: 15px;
+  }
+  &__btn {
+    background: #225196;
+    border-radius: 30px;
+    padding: 13px 60px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 5px 0 10px;
+  }
+  &__switch{
+    color: #225196;
+    border: none;
+    background: none;
+    outline: none;
+  }
+}

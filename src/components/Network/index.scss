@@ -1,0 +1,45 @@
+.network {
+  background: url("../../assets/img/background-3.png") center/cover;
+  height: 100vh;
+  .container {
+    padding-top: 150px;
+  }
+  .minTitle {
+    p {
+      color: #fff;
+    }
+    margin-bottom: 20px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    color: #fff;
+    margin-bottom: 11px;
+  }
+  &__subtitle {
+    margin-bottom: 50px;
+  }
+  &__items {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__number {
+    font-size: 48px;
+    margin-right: 100px;
+  }
+  .plus {
+    color: #cf1257;
+  }
+  &__imgs {
+    display: flex;
+    justify-content: space-between;
+  }
+  p {
+    color: #fff;
+  }
+}

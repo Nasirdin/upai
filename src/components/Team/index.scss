@@ -1,0 +1,50 @@
+.team {
+    padding: 100px 0;
+  .container {
+    text-align: center;
+  }
+  .minTitle {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    margin-bottom: 50px;
+    max-width: 770px;
+    margin: 0 auto;
+  }
+  .slider {
+    &__item {
+      text-align: center;
+    }
+    &__img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid #4f4f4f;
+      // &:before{
+      //     content: "";
+      //     background: url('../../assets/img/next.svg') center/cover;
+      // }
+      &:after {
+        content: "";
+        width: 13px;
+        height: 20px;
+        background: url("../../assets/img/next.svg") center/cover;
+      }
+    }
+    .swiper-button-prev {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

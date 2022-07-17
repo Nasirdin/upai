@@ -1,0 +1,135 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .first-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    margin-left: -25px;
+  }
+  &__items {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 50px;
+    &:first-child {
+      display: none;
+    }
+    &:last-child {
+      margin-right: 0;
+      a {
+        padding: 9px 20px;
+        background-color: #090f3f;
+        color: #fff;
+        border-radius: 28px;
+      }
+    }
+    a {
+      font-size: 13px;
+    }
+  }
+  &__burger {
+    display: none;
+    width: 18px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    margin-top: -5px;
+    translate: 0.5s;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 0;
+      width: 12px;
+      height: 2px;
+      background-color: #fff;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 0;
+      height: 2px;
+      width: 18px;
+      background-color: #fff;
+    }
+  }
+  &__burger.active {
+    background-color: #fff;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    &::before {
+      background-color: #090f3f;
+      transform: rotate(45deg);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 18px;
+    }
+    &::after {
+      background-color: #090f3f;
+      transform: rotate(-45deg);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__item {
+      margin-right: 15px;
+    }
+  }
+}
+@media (max-width: 762px) {
+  .header {
+    &__items.active {
+      display: block;
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: calc(100% - 40px);
+    }
+    &__item {
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 22px;
+      &:first-child {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 65px;
+        img {
+          background-color: #090f3f;
+        }
+      }
+      a {
+        color: #090f3f;
+        font-size: 16px;
+      }
+    }
+    &__items {
+      display: none;
+    }
+    &__burger {
+      display: block;
+    }
+  }
+}

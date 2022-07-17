@@ -1,0 +1,29 @@
+.charts {
+    margin-bottom: 70px;
+  .minTitle {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__profit {
+    margin-right: 50px;
+  }
+  span {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    color: #cf1257;
+  }
+}

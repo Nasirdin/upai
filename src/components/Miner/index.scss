@@ -1,0 +1,62 @@
+.miner {
+  padding: 250px 30px 140px;
+  background: url(../../assets/img/background-4.png) center/cover;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h2,
+  h4,
+  p,
+  span {
+    color: #fff;
+  }
+  &__textContent {
+  }
+  .minTitle {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    margin-bottom: 40px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  .system {
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    background: #0b060c;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.15);
+    border-radius: 38.5px;
+    margin-bottom: 30px;
+    &__img{
+      margin-right: 30px;
+    }
+    &:last-child{
+      margin-left: 30px;
+    }
+  }
+  &__img {
+    max-width: 700px;
+    img{
+        width: 100%;
+    }
+  }
+  &__numItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title{
+      font-family: 'Rubik', sans-serif;
+    }
+  }
+  &__number{
+    margin-bottom: 20px;
+  }
+}

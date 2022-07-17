@@ -1,0 +1,25 @@
+.welcomeTwo {
+  position: relative;
+  padding-bottom: 210px;
+  
+  &__img {
+    position: absolute;
+  }
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__content {
+    max-width: 570px;
+    margin-top: 65px;
+  }
+  .minTitle {
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__text{
+    margin-bottom: 20px;
+  }
+}

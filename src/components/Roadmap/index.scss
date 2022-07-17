@@ -1,0 +1,18 @@
+.roadmap {
+  padding: 127px 0 136px;
+  .container {
+    text-align: center;
+  }
+  .minTitle {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__subtitle{
+    max-width: 770px;
+    margin: 0 auto;
+  }
+}

@@ -1,26 +1,105 @@
-@import url(./fonts/SFPro/stylesheet.css);
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;600&family=Rubik:wght@500;700&display=swap");
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "SF Pro Display";
-  background-color: #d2d2d2;
-}
-ul,
-ol {
-  list-style: none;
+  font-family: "Hind", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #4f4f4f;
 }
 
-.container {
-  max-width: 339px;
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #090f3f;
+}
+h1 {
+  font-weight: 700;
+  color: #fff;
+}
+
+.first-container {
+  max-width: 1370px;
+  padding: 0 15px;
   margin: 0 auto;
 }
-.App {
+.container {
+  max-width: 1240px;
+  padding: 0 10px;
   margin: 0 auto;
-  background-color: #fff;
-  height: 100vh;
+}
+.btn {
+  display: inline-block;
+  background-color: #f8ba1a;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 15px 36px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 28px;
+}
+
+.btn_none {
+  background: none;
+  border: 2px solid #ffffff;
+}
+.btn_white {
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  color: #090F3F;
+}
+.line-block {
+  display: block;
+  width: 94px;
+  height: 5px;
+  background-color: #cf1257;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.minTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .line-block {
+    margin-right: 20px;
+  }
+  p {
+    text-transform: uppercase;
+  }
+}
+.title {
+  font-size: 48px;
+}
+.titleh3 {
+  font-size: 18px;
+}
+.titleh4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+@media (max-width: 992px) {
+  .title {
+    font-size: 40px;
+  }
 }

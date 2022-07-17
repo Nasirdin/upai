@@ -1,0 +1,47 @@
+.eventsTen {
+  padding: 100px 0;
+  text-align: center;
+  .container {
+    text-align: center;
+  }
+  .minTitle {
+    justify-content: center;
+    bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card {
+    padding: 20px 25px 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.15);
+    margin: 0 10px;
+    width: 265px;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__num,
+    .card__month {
+      color: #cf1257;
+    }
+    &__num {
+      margin-bottom: 10px;
+    }
+    &__month {
+      margin-bottom: 47px;
+    }
+    &__title {
+      margin-bottom: 16px;
+    }
+    &__text {
+      margin-bottom: 50px;
+      font-size: 18px;
+    }
+  }
+}

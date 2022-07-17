@@ -1,0 +1,7 @@
+.company {
+  padding-bottom: 130px;
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+.homeBlock {
+  padding-top: 192px;
+  width: 100%;
+  height: 80vh;
+  background: url(../../assets/img/background-1.png) center/cover;
+  &__title {
+    font-size: 75px;
+    text-transform: uppercase;
+  }
+  .line-block {
+    margin-bottom: 50px;
+  }
+  &__subtitle {
+    color: #fff;
+    max-width: 355px;
+    margin-bottom: 20px;
+  }
+  &__btn {
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .homeBlock {
+    &__title {
+      font-size: 50px;
+    }
+  }
+}
